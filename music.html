@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="./musicscripts.js"> </script>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body>
+        <p>
+            Root Note
+        <br>
+            <input type="radio" name="rootnote" value=0> <label class="label" >A</label> </input>
+            <input type="radio" name="rootnote" value=1> <label class="label" >A#</label> </input>
+            <input type="radio" name="rootnote" value=2> <label class="label" >B</label> </input>
+            <input type="radio" name="rootnote" value=3> <label class="label" >C</label> </input>
+            <input type="radio" name="rootnote" value=4> <label class="label" >C#</label> </input>
+            <input type="radio" name="rootnote" value=5> <label class="label" >D</label> </input>
+        <br>
+            <input type="radio" name="rootnote" value=6><label class="label" >D#</label> </input>
+            <input type="radio" name="rootnote" value=7> <label class="label" >E</label> </input>
+            <input type="radio" name="rootnote" value=8> <label class="label" >F</label> </input>
+            <input type="radio" name="rootnote" value=9> <label class="label" >F#</label> </input>
+            <input type="radio" name="rootnote" value=10> <label class="label" >G</label> </input>
+            <input type="radio" name="rootnote" value=11> <label class="label" >G#</label> </input>
+        </p>
+
+        <p>
+            Accidentals
+        <br>
+            <input type="radio" onclick="changeLabel()" name="accidental" value="sharp">Sharps</input>
+            <input type="radio" onclick="changeLabel()" name="accidental" value="flat">Flats</input>
+        </p>
+
+        <p>
+            Scale
+            <br>
+            <select id="scales" name="scales">
+                <option value="Major"> Major (Ionian) </option>
+                <option value="Minor"> Minor (Aeolian)</option>
+                <option value="Major Pentatonic"> Major Pentatonic</option>
+                <option value="Minor Pentatonic"> Minor Pentatonic</option>
+                <option value="Blues"> Blues </option>
+                <option value="Dorian"> Dorian </option>
+                <option value="Phrygian"> Phrygian </option>
+                <option value="Lydian"> Lydian </option>
+                <option value="Mixolydian"> Mixolydian </option>
+                <option value="Locrian"> Locrian </option>
+                <option value="Whole Tone"> Whole Tone</option>
+                <option value="Symmetrical Dominant"> Symmetrical Dominant</option>
+                <option value="Symmetrical Diminished"> Symmetrical Diminished </option>
+                <option value="Super Locrian (Altered)"> Super Loctrian (Altered) </option>
+                <option value="Lydian Dominant"> Lydian Dominant </option>
+                <option value="Jazz Minor"> Jazz Minor </option>
+                <option value="Bebop"> Bebop </option>
+            </select>
+        </p>
+
+        <p id="output"></p>
+
+    </body>
+</html>
